@@ -1,0 +1,183 @@
+body{
+    background-color: #161717;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Google {
+    border: none;
+    border-radius: 3px;
+    font-size: 13pt;
+    color: white;
+    background-color: #1A73E8;
+    gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttons {
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.Google:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.Google span {
+    padding: 5px;
+}
+
+.Google picture {
+    width: 30px;
+    height: 30px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Google picture img {
+    width: 75%;
+
+}
+
+.twiter {
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 3px;
+    font-size: 13pt;
+    color: white;
+
+
+}
+
+.twiter:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.twiter picture {
+    width: 30px;
+    height: 30px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.twiter picture img {
+    width: 40%;
+
+}
+
+.separetor {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separetor hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid;
+
+}
+
+
+.form input {
+    background-color: #212121;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.form {
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 15px;
+  
+}
+
+.form .register {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+
+}
+
+label {
+    width: 50%;
+}
+
+label input {
+    width: 100%;
+    padding: 7px 0px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    
+}
+
+input:hover {
+    box-shadow: 0 0 7px #EB23A8A1;
+    background-color: #454045;
+}
+
+input:focus {
+    box-shadow: 0 0 7px #EB23A8A1;
+    background-color: #454045;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+}
+
+.checkbox #checkbox {
+    width: 10px;
+    height: 10px;
+
+
+}
+
+.crear {
+width: 50%;
+padding: 10px 0px;
+background-color: #EA4C89;
+border: none;
+border-radius: 7px;
+color: white;
+}
+
+.crear:hover {
+    opacity: 0.8;
+    background-color: #ea4c89ce;
+
+    }
