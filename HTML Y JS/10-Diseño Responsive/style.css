@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.lateralI{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+    flex-grow: 2;
+    flex-direction: column;
+    
+}
+.laterald{
+    display: flex;
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 2;
+    
+  
+
+}
+.elemento1V{
+
+    background-color: red;
+    border: white;
+    border: 1px solid white;
+
+}
+.elemento2V{
+
+    background-color:blue;
+    border: white;
+    border: 1px solid white;
+}
+.elemento3V{
+
+    background-color: rgb(251, 255, 0);
+    border: 1px solid white;
+}
+
+
+@media  (max-width: 640px) {
+    .principal{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .lateralI{
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        background-color: aqua;
+        flex-direction: row;
+           
+    }
+
+}
