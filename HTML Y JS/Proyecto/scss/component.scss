@@ -1,0 +1,43 @@
+@mixin btn-base{
+    padding: .3rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    align-items: center;
+}
+.btn-started{
+    @include btn-base();
+    color: white;
+    background-color: #0052FF;
+
+
+    &:hover{
+        opacity: 0.9;
+        
+    }
+}
+
+.btn-sec{
+    @include btn-base();
+    background-color: transparent;
+    color: black;
+    
+    &:hover{
+        color: #0052FF;
+            }
+}
+
+
+.list{
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around;
+    gap: 2rem;
+
+    li{
+        &:hover{
+            color: #0052FF;
+        }
+    }
+}

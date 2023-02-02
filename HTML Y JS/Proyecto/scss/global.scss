@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ECEFF1;
+
+    .logo {
+
+        max-width: 7rem;
+
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    padding: 5rem;
+
+    .wallet {
+        max-width: 33rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .cta {
+        width: 20rem;
+
+        a{
+            text-decoration: none;
+            color: #0052FF;
+            font-weight: 600;
+            font-size: 1.2rem;
+            
+            &:hover{
+                text-decoration: underline;
+                opacity: 0.9;
+                
+            }
+            img {
+                align-items: center;
+                width: 1.5rem;
+                margin-right: 0.3rem;
+            }
+        }
+
+        h2 {
+
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.35rem;
+            width: 150%;
+            font-weight: 500;
+        }
+
+        .cta-cta {
+            width: 150%;
+            
+            .btn-started {
+                font-size: 1rem;
+                padding: 1.2rem 3rem;
+                border-radius: 6px;
+                
+            }
+
+            input {
+                margin-right: 1rem;
+                border: 1px solid #DEDFE2;
+                width: 50%;
+                padding: 1rem;
+                &::placeholder{
+                    margin: 0;
+                    
+                }
+
+            }
+        }
+    }
+}
+
+

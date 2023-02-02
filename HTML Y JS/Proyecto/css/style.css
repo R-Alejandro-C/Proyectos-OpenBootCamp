@@ -1,0 +1,114 @@
+.btn-started {
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  align-items: center;
+  color: white;
+  background-color: #0052FF;
+}
+.btn-started:hover {
+  opacity: 0.9;
+}
+
+.btn-sec {
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+}
+.btn-sec:hover {
+  color: #0052FF;
+}
+
+.list {
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  font-weight: 500;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.list li:hover {
+  color: #0052FF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ECEFF1;
+}
+.nav .logo {
+  max-width: 7rem;
+}
+.nav .logo img {
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  width: 100%;
+  padding: 5rem;
+}
+.home .wallet {
+  max-width: 33rem;
+}
+.home .wallet img {
+  width: 100%;
+}
+.home .cta {
+  width: 20rem;
+}
+.home .cta a {
+  text-decoration: none;
+  color: #0052FF;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.home .cta a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+.home .cta a img {
+  align-items: center;
+  width: 1.5rem;
+  margin-right: 0.3rem;
+}
+.home .cta h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.home .cta p {
+  font-size: 1.35rem;
+  width: 150%;
+  font-weight: 500;
+}
+.home .cta .cta-cta {
+  width: 150%;
+}
+.home .cta .cta-cta .btn-started {
+  font-size: 1rem;
+  padding: 1.2rem 3rem;
+  border-radius: 6px;
+}
+.home .cta .cta-cta input {
+  margin-right: 1rem;
+  border: 1px solid #DEDFE2;
+  width: 50%;
+  padding: 1rem;
+}
+.home .cta .cta-cta input::placeholder {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
