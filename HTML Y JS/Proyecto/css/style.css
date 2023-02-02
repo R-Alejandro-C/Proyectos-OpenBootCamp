@@ -34,6 +34,11 @@
   color: #0052FF;
 }
 
+.coins {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -109,6 +114,22 @@ body {
 }
 .home .cta .cta-cta input::placeholder {
   margin: 0;
+}
+
+.table {
+  width: 100%;
+  padding: 2rem 17rem;
+}
+.table #name {
+  padding-right: 20rem;
+}
+.table table th {
+  color: #8d939e;
+  font-weight: 500;
+}
+.table table td {
+  color: black;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

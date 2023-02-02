@@ -96,4 +96,24 @@ body {
     }
 }
 
+.table{
+    width: 100%;
+    padding: 2rem 17rem;
 
+    #name{
+        padding-right: 20rem;
+        
+    }
+    table{
+        th{
+        color: #8d939e;
+        font-weight: 500;
+        
+    }
+    td{
+        color: black;
+        font-weight: 500;
+        
+    }
+}
+}
