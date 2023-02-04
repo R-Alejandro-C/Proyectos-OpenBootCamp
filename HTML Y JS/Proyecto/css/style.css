@@ -65,55 +65,55 @@ body {
   width: 100%;
 }
 
-.home {
+.home, .home-2 {
   display: flex;
   justify-content: center;
   gap: 10rem;
   width: 100%;
   padding: 5rem;
 }
-.home .wallet {
+.home .wallet, .home-2 .wallet {
   max-width: 33rem;
 }
-.home .wallet img {
+.home .wallet img, .home-2 .wallet img {
   width: 100%;
 }
-.home .cta {
+.home .cta, .home-2 .cta {
   width: 20rem;
 }
-.home .cta a:hover {
+.home .cta a:hover, .home-2 .cta a:hover {
   text-decoration: underline;
   opacity: 0.9;
 }
-.home .cta a img {
+.home .cta a img, .home-2 .cta a img {
   align-items: center;
   width: 1.5rem;
   margin-right: 0.3rem;
 }
-.home .cta h2 {
+.home .cta h2, .home-2 .cta h2 {
   font-size: 4rem;
   font-weight: 700;
 }
-.home .cta p {
+.home .cta p, .home-2 .cta p {
   font-size: 1.35rem;
   width: 150%;
   font-weight: 500;
 }
-.home .cta .cta-cta {
+.home .cta .cta-cta, .home-2 .cta .cta-cta {
   width: 150%;
 }
-.home .cta .cta-cta .btn-started {
+.home .cta .cta-cta .btn-started, .home-2 .cta .cta-cta .btn-started {
   font-size: 1rem;
   padding: 1.2rem 3rem;
   border-radius: 6px;
 }
-.home .cta .cta-cta input {
+.home .cta .cta-cta input, .home-2 .cta .cta-cta input {
   margin-right: 1rem;
   border: 1px solid #DEDFE2;
   width: 50%;
   padding: 1rem;
 }
-.home .cta .cta-cta input::placeholder {
+.home .cta .cta-cta input::placeholder, .home-2 .cta .cta-cta input::placeholder {
   margin: 0;
 }
 
@@ -165,7 +165,7 @@ body {
 }
 .other-coins .coins-coin ul .li {
   font-size: 1.5rem;
-  margin-bottom: 3rem;
+  padding: 1.5rem 1rem;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
@@ -180,6 +180,44 @@ body {
 }
 .other-coins .coins-coin ul .li .coins {
   width: 2.5rem;
+}
+.other-coins .coins-coin ul .li:hover {
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0px 0px 25px rgba(77, 77, 77, 0.3137254902);
+  transform: translateY(-1px);
+  transition: all 0.7s ease-in;
+}
+
+.home-2 {
+  padding-top: 0;
+  border-bottom: 1px solid #ECEFF1;
+}
+.home-2 ul {
+  list-style: none;
+}
+.home-2 ul .li-li {
+  display: flex;
+  flex-direction: row;
+  width: 28rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.home-2 ul .li-li .coins {
+  width: 3rem;
+}
+.home-2 ul .li-li .li-list li h4 {
+  font-size: 1.52rem;
+  font-weight: 700;
+}
+.home-2 ul .li-li .li-list span {
+  width: 100%;
+  color: #555555;
+  font-size: 1.1rem;
+}
+.home-2 .wallet {
+  margin-top: 3rem;
+  max-width: 50rem;
 }
 
 /*# sourceMappingURL=style.css.map */
