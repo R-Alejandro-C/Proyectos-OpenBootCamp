@@ -97,7 +97,7 @@ body {
 
 .table {
     width: 100%;
-    padding: 2rem 17rem;
+    padding: 2rem 5rem;
 
     #name {
         padding-right: 20rem;
@@ -237,14 +237,15 @@ body {
 
 .features {
 
-    .header{
-        h2{
+    .header {
+        h2 {
             display: flex;
             font-size: 3rem;
             justify-content: center;
             align-items: center;
         }
-        span{
+
+        span {
             display: flex;
             font-size: 1.35rem;
             justify-content: center;
@@ -252,6 +253,7 @@ body {
             color: #555555;
         }
     }
+
     .lista {
         display: flex;
         width: 100%;
@@ -277,6 +279,422 @@ body {
             p {
                 font-size: 1rem;
                 color: #6e6e6e;
+            }
+        }
+    }
+}
+
+.banner {
+    background-color: #0052FF;
+    width: 100%;
+    color: white;
+    font-size: 4rem;
+    padding: 2rem 2rem;
+    margin-bottom: 5rem;
+
+    li {
+        &:hover {
+            color: #ffffff;
+
+            text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+.steps {
+
+    @extend .features;
+
+    .lista {
+        padding: 10rem 16rem;
+    }
+}
+
+.footer {
+    background-color: #f5f8ff;
+    background-image: url(https://assets.coinbase.com/assets/9b8b54316f0687f79fb3.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    padding: 10rem 5rem 5rem 10rem;
+
+    .gift {
+        max-width: 20rem;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .nav {
+
+        display: flex;
+        flex-direction: row;
+
+        .list {
+            display: none;
+        }
+    }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 5rem 0;
+
+        gap: 0;
+
+        .wallet {
+
+            img {
+                display: none;
+            }
+        }
+
+        .cta {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+
+            a {
+                text-align: center;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            p {
+                text-align: center;
+                font-size: 0.7rem;
+                width: 100%;
+                font-weight: 500;
+            }
+
+            .cta-cta {
+                width: 100%;
+
+                .btn-started {
+                    font-size: 1rem;
+                    padding: 1.2rem 3rem;
+                    border-radius: 6px;
+
+                }
+
+                input {
+                    margin-right: 0.5rem;
+                    border: 1px solid #DEDFE2;
+                    width: 50%;
+                    padding: 1rem;
+
+                    &::placeholder {
+                        margin: 0;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .table {
+        width: 100%;
+        padding: 2rem 0rem;
+
+        .img {
+            display: none;
+        }
+
+        #name {
+            padding-right: 0rem;
+
+        }
+
+        table {
+            th {
+                color: #8d939e;
+                font-weight: 500;
+
+            }
+
+            td {
+                color: black;
+                font-weight: 500;
+
+            }
+        }
+    }
+
+    .other-coins {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 1rem;
+        width: 100%;
+        padding: 0rem 0rem 4rem 1rem;
+
+        .gift {
+
+            width: 100%;
+            padding: 4rem 0rem;
+
+            h2 {
+                font-weight: 700;
+            }
+
+            p {
+
+
+                width: 100%;
+                font-weight: 300;
+
+            }
+
+            .btn-started {
+                border-radius: 4px;
+                padding: 0.61rem 1rem;
+            }
+        }
+
+        .coins-coin {
+            width: 100%;
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                .li {
+                    font-size: 1.5rem;
+                    padding: 1.5rem 1rem;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .span {
+                        
+                        font-weight: 450;
+                        font-size: 1.4rem;
+                    }
+
+                    .gain {
+
+                        font-size: 1.2rem;
+                    }
+
+                    .coins {
+                        width: 2.5rem;
+                    }
+
+                    &:hover {
+
+                        outline: none;
+                        border-radius: 6px;
+                        box-shadow: 0px 0px 25px #4d4d4d50;
+                        transform: translateY(-1px);
+                        transition: all 0.7s ease-in;
+                    }
+                }
+            }
+        }
+    }
+
+    .features {
+
+        .header {
+            h2 {
+                display: flex;
+                font-size: 3rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            span {
+                display: flex;
+                font-size: 1.35rem;
+                justify-content: center;
+                align-items: center;
+                color: #555555;
+            }
+        }
+
+        .lista {
+            display: flex;
+            width: 100%;
+            padding: 5rem;
+            justify-content: center;
+            flex-direction: column;
+
+            .list {
+                display: flex;
+                flex-direction: column;
+
+                .seguro {
+                    max-width: 18rem;
+                }
+
+                li {
+                    padding: 2rem 0rem;
+                    font-size: 1.32rem;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: #6e6e6e;
+                }
+            }
+        }
+    }
+
+    .home-2 {
+        @extend .home;
+        padding-top: 0;
+        border-bottom: 1px solid #ECEFF1;
+        width: 100%;
+
+        ul {
+            list-style: none;
+            text-align: center;
+
+            .li-li {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                padding: 1rem 0rem;
+                justify-content: center;
+                text-align: center;
+
+                .coins {
+                    width: 3rem;
+                }
+
+                .li-list {
+                    li {
+                        h4 {
+                            font-size: 1.52rem;
+                            font-weight: 700;
+                        }
+
+                    }
+
+                    span {
+                        width: 100%;
+                        color: #555555;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        .wallet {
+            display: none;
+        }
+    }
+
+    .banner {
+        background-color: #0052FF;
+        width: 100%;
+        color: white;
+        font-size: 1rem;
+        padding: 2rem 0rem;
+        margin-bottom: 5rem;
+
+        li {
+            &:hover {
+                color: #ffffff;
+
+                text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+    .steps {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .header {
+            h2 {
+                display: flex;
+                font-size: 3rem;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            span {
+                display: flex;
+                font-size: 1.35rem;
+                justify-content: center;
+                align-items: center;
+                color: #555555;
+            }
+        }
+
+        .lista {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 5rem;
+            justify-content: center;
+            
+
+            .list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .seguro {
+                    max-width: 18rem;
+                }
+
+                li {
+                    padding: 2rem 0rem;
+                    font-size: 1.32rem;
+                    
+                    display: flex;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: #6e6e6e;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: #f5f8ff;
+        background-image: none;
+        width: 100%;
+        display: flex;
+        padding: 0 0 7rem 0rem;
+        justify-content: center;
+        .gift {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+            padding-bottom: 7rem;
+            margin: 0;
+
+            h3 {
+                width: 100%;
+                font-size: 2rem;
             }
         }
     }
