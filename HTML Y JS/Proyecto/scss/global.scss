@@ -41,12 +41,7 @@ body {
     .cta {
         width: 20rem;
 
-        a{
-            text-decoration: none;
-            color: #0052FF;
-            font-weight: 600;
-            font-size: 1.2rem;
-            
+        a{ 
             &:hover{
                 text-decoration: underline;
                 opacity: 0.9;
@@ -116,4 +111,60 @@ body {
         
     }
 }
+}
+
+.other-coins {
+   
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    padding:  0rem 0rem 4rem 4rem;
+    
+    .gift{
+        width: 20rem;
+        padding: 4rem 0;
+        h2{
+        font-weight: 700;
+     }
+    p{
+       
+            
+            width: 100%;
+            font-weight: 300;
+        
+    }
+    .btn-started{
+        border-radius: 4px;
+        padding: 0.61rem 1rem;
+    }
+    }
+    .coins-coin{
+        width: 35rem;
+        padding: 0  0 5rem;
+       ul{
+        list-style: none;
+        padding: 0;
+        .li{
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+
+            .span{
+                margin-left: 1rem;
+                font-weight: 450;
+                font-size: 1.4rem;
+            }
+            .gain{
+               
+               font-size: 1.2rem;
+            }
+            .coins{
+                width: 2.5rem;
+            }
+        }
+       }
+    }
 }
