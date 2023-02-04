@@ -220,4 +220,39 @@ body {
   max-width: 50rem;
 }
 
+.features .header h2 {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.features .header span {
+  display: flex;
+  font-size: 1.35rem;
+  justify-content: center;
+  align-items: center;
+  color: #555555;
+}
+.features .lista {
+  display: flex;
+  width: 100%;
+  padding: 5rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.features .lista .list .seguro {
+  max-width: 18rem;
+}
+.features .lista .list li {
+  padding: 2rem 0rem;
+  font-size: 1.32rem;
+}
+.features .lista .list li:hover {
+  color: black;
+}
+.features .lista .list p {
+  font-size: 1rem;
+  color: #6e6e6e;
+}
+
 /*# sourceMappingURL=style.css.map */
