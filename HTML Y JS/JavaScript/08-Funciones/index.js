@@ -2,14 +2,13 @@ function verdad(){
     return true;
     }
     console.log(verdad());
-    
-    /*
+
     const promes = new Promise((result, ejected) => {
         setTimeout(() => {
             console.log("Hola soy una promesa");
         }, 5000);
     })
-    */
+
     
     
     function* id(){
@@ -21,7 +20,7 @@ function verdad(){
             
             yield id
         }
-           
+            
         
     }
     

@@ -1,0 +1,19 @@
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"error","message":"Vaya vaya... Ocurrio un error!!!","service":"user-service"}
+{"level":"info","message":"Otra oinfo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"error","message":"Vaya vaya... Ocurrio un error!!!","service":"user-service"}
+{"level":"info","message":"Otra oinfo","service":"user-service"}
+{"level":"error","message":"Otro error?","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"error","message":"Vaya vaya... Ocurrio un error!!!","service":"user-service"}
+{"level":"info","message":"Hola Mundo","service":"user-service"}
+{"level":"error","message":"Vaya vaya... Ocurrio un error!!!","service":"user-service"}
