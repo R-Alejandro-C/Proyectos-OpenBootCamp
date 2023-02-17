@@ -1,4 +1,6 @@
 class estudiante{
+    #nombre;
+    #asignaturas
     constructor(nombre, asignaturas){
         this.nombre = nombre;
         this.asignaturas=["Javascript", " HTML", " CSS"];
@@ -6,8 +8,10 @@ class estudiante{
     }
 
     getEstudiantes(){
-        return this.nombre + " " + this.asignaturas
-
+        return {
+              nombre: this.nombre,
+              asignaturas: this.asignaturas
+    }
     }
 }
 
