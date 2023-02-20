@@ -37,7 +37,6 @@ new google.maps.Marker({
 })
 ]
 
-
 console.log(position);
 
 
