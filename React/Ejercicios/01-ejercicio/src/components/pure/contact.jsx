@@ -2,8 +2,12 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import { contacto } from '../../models/contact.class';
 
-const Contact = ({contacto}) => {
+const Contact = ({contacto,estado}) => {
 
+    const [conexion, setconexion] = useState(estado);
+    const cambiarEstado = ()=>{
+        setconexion(!conexion)
+    }
 
     return (
         <div>
@@ -17,16 +21,18 @@ const Contact = ({contacto}) => {
                 Email: {contacto.email}
             </h3>
             <h3>
-                Conexion: {contacto.conectado?"Contacto En Línea":"Contacto No Disponible"}
+                Conexion: {conexion===false ? "Conectado":"Desconectado"}
             </h3>
            
+            <button onClick={cambiarEstado}>Cambiar estado</button>
         </div>
     );
 };
 
 
 Contact.propTypes = {
-    contacto: PropTypes.instanceOf(contacto)
+    contacto: PropTypes.instanceOf(contacto),
+    estado: PropTypes.bool,
 };
 
 
