@@ -1,14 +1,20 @@
 import { tareas } from "../../models/task.class";
-
-import React from 'react';
+import "../../styles/task.scss"
+import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 
 
 const Task = ({tareas}) => {
 
+        useEffect(() => {
+            console.log("Creando tareas");
+            return () => {
+                console.log(`tarea: ${tareas.nombre}`);
+            };
+        }, [tareas]);
     return (
         <div>
-            <h3>
+            <h3 className="tareas-nombre">
                Nombre: {tareas.nombre}
             </h3>
             <h4>
