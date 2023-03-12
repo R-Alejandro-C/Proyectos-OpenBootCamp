@@ -1,11 +1,12 @@
 import './App.css';
 import TaskList from './components/container/taskList';
+import OptionalRender from './components/pure/optionalRender';
 
 function App() {
   return (
     <div className="App">
       
-        <TaskList></TaskList>
+        <OptionalRender></OptionalRender>
       
     </div>
   );
