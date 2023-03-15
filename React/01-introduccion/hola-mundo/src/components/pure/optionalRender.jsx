@@ -36,23 +36,6 @@ const OptionalRender = () => {
         setmessage(message+1)
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return (
         <div>
             <div>

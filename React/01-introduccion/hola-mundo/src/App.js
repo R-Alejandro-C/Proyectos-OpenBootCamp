@@ -1,12 +1,13 @@
 import './App.css';
 import TaskList from './components/container/taskList';
-import OptionalRender from './components/pure/optionalRender';
+import LoginFormik from './components/pure/forms/loginFormik';
+import RegisterFormik from './components/pure/forms/registerFormik';
 
 function App() {
   return (
     <div className="App">
       
-        <OptionalRender></OptionalRender>
+        <TaskList></TaskList>
       
     </div>
   );

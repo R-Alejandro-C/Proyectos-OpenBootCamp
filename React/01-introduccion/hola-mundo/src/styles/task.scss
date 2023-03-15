@@ -9,3 +9,21 @@ h1{
 .tareas-accion{
     cursor: pointer;
 }
+
+
+.tarea-completo{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.tarea-incompleto{
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
+
+

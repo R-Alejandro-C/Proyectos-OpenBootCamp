@@ -4,6 +4,7 @@ import { tareas } from '../../models/task.class';
 import { NIVEL } from '../../models/levels.enum';
 import Task from '../pure/task';
 import TaskForm from '../pure/forms/taskForm';
+import AddTasksFormik from '../pure/forms/addTasksFormik';
 
 const TaskList = () => {
 
@@ -17,7 +18,10 @@ const TaskList = () => {
 
     useEffect(() => {
         console.log("Estado de tareas");
+        setTimeout(() => {
+            
         setcargando(false)
+        }, 3000);
         return () => {
             console.log("Componente TaskList a desaparecido");
         };
@@ -53,8 +57,50 @@ function agregarTarea(tare){
     tempTareas.push(tare)
     settarea(tempTareas)
 }
-    return (
+
+function addTarea(tare) {
+    settarea((oldValue)=>[...oldValue, tare])
+}
+
+const Tabla = ()=>{
+    return(
+        <table className='table'>
+        <thead>
+            <tr>
+                <th scope='col'>Titulo</th>
+                <th scope='col'>Descripcion</th>
+                <th scope='col'>Prioridad</th>
+                <th scope='col'>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {tarea.map((tarea, index) => {
+                return(
+                <Task key={index} tareas={tarea} completado={cambiarCompletado} eliminar={eliminarTarea}></Task>
+                )
+            })}
+
+        </tbody>
+    </table>
+    )
+}
+let tablaComponent;
+
+if (tarea.length>0) {
+     tablaComponent = <Tabla></Tabla>
+} else {
+     tablaComponent = (
         <div>
+            <h3>
+                Agrega tus tareas
+            </h3>
+            <h4> AHORA</h4>
+        </div>
+    )
+}
+    
+    return (
+        <div >
             <div className='col-12'>
                 <div className='card'>
                     <div className='card-header p-3 text-primary'>
@@ -63,29 +109,15 @@ function agregarTarea(tare){
                         </h5>
                     </div>
                     <div class="card-body" data-mdb-perfect-scrolbar="true" style={{ position: "relative", height: "400px", color: "black" }}>
-                        This is some text within a card body.
-                        <table className='table'>
-                            <thead>
-                                <tr>
-                                    <th scope='col'>Titulo</th>
-                                    <th scope='col'>Descripcion</th>
-                                    <th scope='col'>Prioridad</th>
-                                    <th scope='col'>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {tarea.map((tarea, index) => {
-                                    return(
-                                    <Task key={index} tareas={tarea} completado={cambiarCompletado} eliminar={eliminarTarea}></Task>
-                                    )
-                                })}
-
-                            </tbody>
-                        </table>
+                       
+                       {cargando? (<h1>Cargando Tabla....</h1>):  tablaComponent}
+                      
                     </div>
                 </div>
             </div>
-                                    <TaskForm add={agregarTarea}></TaskForm>
+            {/**
+                                 //?   <TaskForm add={agregarTarea} length={tarea.length}></TaskForm> */}
+                                 <AddTasksFormik addTarea={agregarTarea}></AddTasksFormik>
         </div>
     );
 };

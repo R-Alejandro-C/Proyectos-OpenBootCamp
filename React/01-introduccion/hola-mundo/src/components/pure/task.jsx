@@ -37,7 +37,7 @@ const Task = ({ tareas, completado, eliminar }) => {
         }
     }
     return (
-            <tr className="fw-normal">
+            <tr className={tareas.completado? "tarea-completo":"tarea-incompleto"}>
                 <th scope="row">
                     <span className="ms-2">{tareas.nombre} </span>
                 </th>

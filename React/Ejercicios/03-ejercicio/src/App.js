@@ -1,10 +1,11 @@
 import './App.css';
-import ContactList from './components/container/contactList';
+import ContactListFormik from './components/container/contactListFormik';
+
 
 function App() {
   return (
     <div className="App">
-      <ContactList></ContactList>
+      <ContactListFormik></ContactListFormik>
     </div>
   );
 }
