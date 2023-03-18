@@ -40,7 +40,7 @@ const RegisterFormik = () => {
     )
     return (
         <div>
-            <h4>Register Formik</h4>
+            <h4 style={{textAlign:"center"}}>Register Formik</h4>
             <Formik  initialValues={initialValues}
            validationSchema={registerSchema}
            onSubmit={async (values) => {
@@ -55,6 +55,7 @@ const RegisterFormik = () => {
                     handleChange,
                     handBluer})=>(
                         <Form>
+                            <div>
                             <label htmlFor='username'>Username</label>
                         <Field id="username" type="username" name="username" placeholder="username" />
                         {
@@ -93,13 +94,17 @@ const RegisterFormik = () => {
                                 <ErrorMessage name="confirm" component={"p"}></ErrorMessage>
                             )
                         }
+                        </div>
+
                          <button type="submit">
                             Registra tu cuenta
                         </button>
                         {isSubmitting? (<p> Registrando cuenta</p>):null}
                         </Form>
+                        
                     )}
             </Formik>
+            
         </div>
     );
 }

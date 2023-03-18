@@ -13,13 +13,14 @@ const loginSchema = Yup.object().shape(
 
 
 const LoginFormik = () => {
+    
     const initialCredentials = {
         email: "",
         password: ""
     }
     return (
         <div>
-            <h4>Login Formikn</h4>
+            <h4 style={{textAlign:"center"}}>Login Formikn</h4>
             <Formik initialValues={initialCredentials} 
             validationSchema={loginSchema}
             onSubmit={async (values) => {
@@ -69,12 +70,14 @@ const LoginFormik = () => {
                         </button>
                         {isSubmitting? (<p>Loguea tus credenciales</p>):null}
                     </Form>
+                    
                     )}
-                   
-                
+
 
 
             </Formik>
+            
+          
         </div>
     );
 }
