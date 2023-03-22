@@ -1,11 +1,12 @@
 import './App.css';
 import TaskList from './components/container/taskList';
-import RegisterFormik from './components/pure/forms/registerFormik';
+import FetchExample from './components/pure/fetchExample';
+import AxiosExample from './components/pure/axiosExample';
 function App() {
   return (
     <div className="App">
       
-      <RegisterFormik></RegisterFormik>
+      <AxiosExample></AxiosExample>
       
     </div>
   );
