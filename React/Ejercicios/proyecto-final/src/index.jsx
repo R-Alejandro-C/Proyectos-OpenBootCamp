@@ -1,12 +1,13 @@
-import App from "./components/App"
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/jsx-no-undef */
+import ReactDOM from 'react-dom';
+import App from './components/App';
 
-import ReactDom from "react-dom"
-import "bootstrap/dist/css"
-import "./styles/index.scss"
+import './styles/index.scss';
 
 ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-)
-
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
