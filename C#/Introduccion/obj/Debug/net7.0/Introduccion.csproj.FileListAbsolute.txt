@@ -1,0 +1,14 @@
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\bin\Debug\net7.0\Introduccion.exe
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\bin\Debug\net7.0\Introduccion.deps.json
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\bin\Debug\net7.0\Introduccion.runtimeconfig.json
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\bin\Debug\net7.0\Introduccion.dll
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\bin\Debug\net7.0\Introduccion.pdb
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\Introduccion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\Introduccion.AssemblyInfoInputs.cache
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\Introduccion.AssemblyInfo.cs
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\Introduccion.csproj.CoreCompileInputs.cache
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\Introduccion.dll
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\refint\Introduccion.dll
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\Introduccion.pdb
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\Introduccion.genruntimeconfig.cache
+C:\Users\aleco\Documents\GitHub\Proyectos-OpenBootCamp\C#\Introduccion\obj\Debug\net7.0\ref\Introduccion.dll
